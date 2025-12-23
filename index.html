@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proteja seu veículo com as melhores seguradoras. Cotação rápida e fácil.">
+    <title>CL&C Corretora de Seguros</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="assets/clc-logo.png" alt="CL&C Corretora de Seguros" class="logo-img">
+            </div>
+
+            <nav class="desktop-nav">
+                <a href="#home" class="active">Home</a>
+                <a href="#seguro">Seguro Automóveis</a>
+                <a href="#cotacao" class="btn-nav">Fale Conosco</a>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu">
+            <button class="close-menu"><i class="ph ph-x"></i></button>
+            <a href="#home">Home</a>
+            <a href="#seguro">Seguro Automóveis</a>
+            <a href="#cotacao">Fale Conosco</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg-shape"></div>
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1>SUA VIDA E</h1>
+					<h1><span class="text-gradient">SEU VEÍCULO</span></h1>
+					<h1>MAIS SEGUROS</h1>
+                    <p>AQUI NA CL&C VOCÊ TEM AS PRINCIPAIS SEGURADORAS À SUA DISPOSIÇÃO.</p>
+                    <div class="hero-subtoken">
+                        <i class="ph-fill ph-shield-check"></i>
+                        <span>Garantia de proteção completa</span>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <!-- Placeholder visual composition -->
+                    <div class="image-mask">
+                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070&auto=format&fit=crop"
+                            alt="Carro e motorista feliz" class="main-img">
+                    </div>
+                    <div class="floating-badge">
+					    <span class="label">SEU VEÍCULO</span>
+                        <span class="number">100%</span>
+                        <span class="label">PROTEGIDO</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Strip -->
+        <section class="partners">
+            <div class="container">
+                <p>NOSSAS SEGURADORAS PARCEIRAS</p>
+                <div class="partners-grid">
+                    <div class="partner-item"><img src="assets/partner-porto.png" alt="Porto Seguro"></div>
+                    <div class="partner-item"><img src="assets/partner-azul.png" alt="Azul Seguros"></div>
+                    <div class="partner-item"><img src="assets/partner-hdi.png" alt="HDI"></div>
+                    <div class="partner-item"><img src="assets/partner-liberty.png" alt="Liberty Seguros"></div>
+                    <div class="partner-item"><img src="assets/partner-tokio.png" alt="Tokio Marine"></div>
+                    <div class="partner-item"><img src="assets/partner-mapfre.png" alt="Mapfre"></div>
+                    <div class="partner-item"><img src="assets/partner-ituran.png" alt="Ituran"></div>
+                    <div class="partner-item"><img src="assets/partner-suhai.png" alt="Suhai"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits & Form Section -->
+        <section id="seguro" class="benefits-section">
+            <div class="container grid-layout">
+                <!-- Left: Benefits Card -->
+                <div class="benefits-card">
+                    <div class="card-header">
+                        <h2>SEGURO COMPLETO</h2>
+                        <div class="badge-featured">MAIS POPULAR</div>
+                    </div>
+                    <div class="price-economies">
+                        <span class="big-text">ATÉ 30%</span>
+                        <span class="sub-text">mais barato para Apps</span>
+                        <div class="app-badges">
+                            <div class="app-badge"><img src="assets/uber-logo.png" alt="Uber"></div>
+                            <div class="app-badge"><img src="assets/99-logo.png" alt="99"></div>
+                        </div>
+                    </div>
+                    <ul class="benefits-list">
+                        <li><i class="ph-fill ph-check-circle"></i> 100% da FIPE (Roubo/Furto)</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Assistência 24 Horas</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Cobertura de Colisão</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Carro Reserva</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Danos a Terceiros</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Sem Análise de Perfil</li>
+                    </ul>
+                    <a href="#cotacao" class="btn-secondary">Ver Coberturas</a>
+                </div>
+
+                <!-- Right: Multi-step Form -->
+                <div class="quote-form-container" id="cotacao">
+                    <div class="form-header">
+                        <h3>COTAÇÃO ONLINE</h3>
+                        <p>Simples, rápido e sem compromisso.</p>
+                    </div>
+
+                    <form id="quoteForm" class="wizard-form">
+                        <!-- Progress Bar -->
+                        <div class="progress-bar">
+                            <div class="step active" data-step="1">1</div>
+                            <div class="line"></div>
+                            <div class="step" data-step="2">2</div>
+                            <div class="line"></div>
+                            <div class="step" data-step="3">3</div>
+                        </div>
+
+                        <!-- Step 1: Location -->
+                        <div class="form-step active" data-step="1">
+                            <label for="cep">Qual seu CEP?</label>
+                            <input type="text" id="cep" placeholder="00000-000" required>
+                            <div class="form-actions">
+                                <button type="button" class="btn-next" onclick="nextStep(1)">Continuar <i
+                                        class="ph-bold ph-arrow-right"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Usage -->
+                        <div class="form-step" data-step="2">
+                            <label>Uso principal do veículo?</label>
+                            <div class="radio-group">
+                                <label class="radio-card">
+                                    <input type="radio" name="usage" value="pessoal" checked>
+                                    <span class="radio-content">
+                                        <i class="ph-duotone ph-user"></i>
+                                        Pessoal
+                                    </span>
+                                </label>
+                                <label class="radio-card">
+                                    <input type="radio" name="usage" value="app">
+                                    <span class="radio-content">
+                                        <div class="mini-app-logos">
+                                            <img src="assets/uber-logo.png" alt="Uber">
+                                            <img src="assets/99-logo.png" alt="99">
+                                        </div>
+                                        Motorista App
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn-prev" onclick="prevStep(2)">Voltar</button>
+                                <button type="button" class="btn-next" onclick="nextStep(2)">Continuar <i
+                                        class="ph-bold ph-arrow-right"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Vehicle -->
+                        <div class="form-step" data-step="3">
+                            <label for="name">Seu Nome</label>
+                            <input type="text" id="name" placeholder="Nome completo" required>
+
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="seu@email.com" required>
+
+                            <label for="model">Modelo do Veículo</label>
+                            <input type="text" id="model" placeholder="Ex: Onix 1.0 Turbo" required>
+
+                            <label for="year">Ano do Veículo</label>
+                            <input type="number" id="year" placeholder="Ex: 2022" required>
+
+                            <label for="phone">WhatsApp</label>
+                            <input type="tel" id="phone" placeholder="(21) 97280-2652" required>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn-prev" onclick="prevStep(3)">Voltar</button>
+                                <button type="submit" class="btn-main pulse">COTAR AGORA</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Strip -->
+        <section class="cta-strip">
+            <div class="container">
+                <h2>Não fique desprotegido. A hora é agora!</h2>
+                <a href="#cotacao" class="btn-white">Fazer Cotação</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h4>CL&C CORRETORA</h4>
+                <p>R. da Assembléia, 41 - 4º andar - Centro, Rio de Janeiro - RJ, 20011-001</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <a href="#home">Home</a>
+                <a href="#seguro">Seguro</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <p><i class="ph-fill ph-whatsapp-logo"></i> (21) 97280-2652</p>
+                <p><i class="ph-fill ph-envelope-simple"></i> contato@clccorretora.com.br</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CL&C Corretora de Seguros. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5521972802652" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
+        <i class="ph-fill ph-whatsapp-logo"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
