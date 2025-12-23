@@ -90,7 +90,7 @@ form.addEventListener('submit', function (e) {
 
     // Send Email via FormSubmit.co (Background)
     const emailData = {
-        _subject: "Nova Cotação Solicitada - CL&C",
+        _subject: "Nova Cotação Veicular Solicitada",
         _captcha: "false",
         _template: "table",
         Nome: name,
@@ -144,3 +144,4 @@ phoneInput.addEventListener('input', function (e) {
 
 // Initialize
 updateProgress(1);
+
